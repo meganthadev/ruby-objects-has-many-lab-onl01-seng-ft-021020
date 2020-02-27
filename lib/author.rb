@@ -21,10 +21,6 @@ class Author
     post.author = self
     @@post_count += 1
   end
-
-  def post_count
-    posts
-  end
   
    def posts
     Post.all.select do |post|
@@ -32,5 +28,8 @@ class Author
   end
 end
 
+def self.post_count
+    @@post_count
+  end
   
 end
