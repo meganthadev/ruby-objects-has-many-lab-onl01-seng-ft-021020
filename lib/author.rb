@@ -28,8 +28,8 @@ class Author
   end
 end
 
-def post_count
-    @@post_count
+  def post_count
+    @posts
   end
   
 end
